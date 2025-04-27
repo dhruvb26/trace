@@ -1,0 +1,17 @@
+sustainability_discussion_task:
+  description: >
+    Engage in a short conversation with the supplier to discuss sustainability issues and concerns.
+  expected_output: >
+    A brief summary of the conversation with the supplier.
+  agent: patagonia_agent
+
+email_follow_up_task:
+  description: >
+    Following the conversation with the supplier, prepare and send a formal email
+    summarizing the discussion points, highlighting the sustainability issues identified,
+    and clearly outlining Patagonia's expectations for compliance.
+    Include specific recommendations for improvement and set a timeline for addressing the issues.
+  expected_output: >
+    A confirmation that the follow-up email has been sent to the supplier with all required details,
+    including sustainability standards, improvement recommendations, and timeline for compliance.
+  agent: patagonia_agent

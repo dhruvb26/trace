@@ -1,0 +1,46 @@
+{
+    "website_content_scraper": {
+        "identity_key": "0f0595d436301ed7919f2d7e471a430660d93d7ce36c579edd622c163df3a12e",
+        "wallet_key": "8tfq/KJO5CAKxGHoBlASpAwC44ULtQRLx7pAPKbkJg8="
+    },
+    "scraper_client": {
+        "identity_key": "f9861a545910c7b4d357d472b8fb23419e1db5a7c99ca203836f51aabbc101bd",
+        "wallet_key": "XYMZ69Z+rFfSP3z2bng57Vigj5BlG1mxvHL5Jvmv5qc="
+    },
+    "user": {
+        "identity_key": "4afcb303a899df6b0c3cc2c432a0b7b8a8da5cd9103c9bef13065428b3d7e787",
+        "wallet_key": "VDfLNUZm5vg/tfCaVbntEsJWwtMWbnipEhIRpJPA5L4="
+    },
+    "scrape-agent": {
+        "identity_key": "bd92fe31e5107d797b29cbdb40a603c12fde1faed0b62ca43f2e5759da615921",
+        "wallet_key": "l865NirKTe1oX+D1FWlVAKSpFNZSgyGAVL+w4wZNfHo="
+    },
+    "agent1": {
+        "identity_key": "f367bb9e065f23258916a6c332f54069e4d058955097d308fc274412c70c6b17",
+        "wallet_key": "IArYFJk1SYpvJ1eQx53pWVw+5wcpY2+BD9f8yylqsFY="
+    },
+    "test_agent": {
+        "identity_key": "721df97c8176af6fa515ab6e0fb0ecef7cb2da59ddf73518160ed56a69ceab94",
+        "wallet_key": "qZtB0ZKG3mSetjwL/D9LKZftb2sRuFfGRAVUR4mgl7c="
+    },
+    "perplexity_agent": {
+        "identity_key": "e662d61d7b1f72537142934b959c138a25a39558ddd68778d9b80a9dcdef2523",
+        "wallet_key": "6K1zYfICBnSB5a7gPI5HxsZ2cLPE8Ym9rpmGDJ887h4="
+    },
+    "My First Agent": {
+        "identity_key": "29b509017a079e190a92a8e978063416b5b7a256396a781b70705c99aff17b87",
+        "wallet_key": "q/rEgbGfz6n6SXIEOGCoHeHX0JvkNfkpz5G5JF0R+dA="
+    },
+    "My Second Agent": {
+        "identity_key": "6728b94540dd30729c5ddebb5d59c7e40bb2bc966639839bf39d523b344daba6",
+        "wallet_key": "UI2ljgZvoJu5U7ojuJnU7qtXkh/2Hu5nBjvbsmGQ8j4="
+    },
+    "Supplier Agent": {
+        "identity_key": "17036ae53777d33f5e73322d7fd8069d48bdb1188468d54f8a6fb23ce5c6ce92",
+        "wallet_key": "fPuSkRi6MmF+Mjsrd4f2Srj+BaGWUAUHZJvJ9lfC+ho="
+    },
+    "Patagonia Agent": {
+        "identity_key": "9ecf846afcb2d1b3104afccdc366c7c79ebe7317d19da47a06cc910f40c43e0f",
+        "wallet_key": "lXltgZRem4Fn/QXzLaBBCFl6Yd4FVJ91XtQKTbmXfBY="
+    }
+}

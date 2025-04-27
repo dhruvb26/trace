@@ -1,0 +1,24 @@
+{
+  "product_name": "Men's Micro D\u00ae Fleece Jacket",
+  "company": "Patagonia",
+  "sustainability_score": 72,
+  "scraped_data": {
+    "Product Name": "Men's Micro D\u00ae Fleece Jacket",
+    "Material Info": "Made of 100% recycled polyester microfleece that feels soft and light, provides steadfast warmth and dries quickly",
+    "Made In Info": "Made in a Fair Trade Certified\u2122 factory",
+    "Sustainability Features": [
+      "Made of 100% recycled polyester microfleece that feels soft and light, provides steadfast warmth and dries quickly",
+      "Made in a Fair Trade Certified\u2122 factory, which means the people who made this product earned a premium for their labor",
+      "4.7-oz 100% recycled polyester microdenier fleece with a double-sided, anti-pilling finish (BLK, FEA: solution-dyed yarns)",
+      "3-oz 100% recycled polyester brushed tricot mesh",
+      "Made in a Fair Trade Certified\u2122 factory"
+    ],
+    "Certifications": [],
+    "Product URL": "https://www.patagonia.com/product/mens-micro-d-fleece-jacket/26171.html?dwvar_26171_color=NENA"
+  },
+  "supply_chain_data": {
+    "ai_response": "```json\n{\n  \"materials_source\": {\n    \"main_fabric\": \"100% recycled polyester microdenier fleece\",\n    \"pocket_bags\": \"100% recycled polyester brushed tricot mesh\",\n    \"dyeing\": \"solution-dyed yarns for some colors (BLK, FEA)\"\n  },\n  \"manufacturing_locations\": [\n    \"El Salvador (Fair Trade Certified\u2122 factory)\"\n  ],\n  \"transportation\": {\n    \"details\": \"Specific transportation methods publicly undisclosed. Standard global apparel logistics likely via sea and truck freight.\"\n  },\n  \"sustainability_initiatives\": [\n    \"Use of 100% recycled polyester reducing virgin plastic use\",\n    \"Fair Trade Certified\u2122 factory ensuring premium wages to workers\",\n    \"Anti-pilling finish to increase product lifespan\",\n    \"Patagonia's Responsible Collection emphasizing recycled/repurposed materials\",\n    \"Certified B-Corp company status\"\n  ],\n  \"certifications\": [\n    \"Fair Trade Certified\u2122\",\n    \"B-Corp Certification\",\n    \"Use of recycled materials certified by Patagonia's internal standards\"\n  ],\n  \"carbon_footprint_estimate\": \"Not publicly disclosed specifically for this product; Patagonia as a company actively measures and reduces carbon emissions across supply chain but exact footprint for Men's Micro D\u00ae Fleece Jacket is unavailable.\"\n}\n```",
+    "parsing_error": "Could not parse AI response as JSON"
+  },
+  "score_explanation": "Good sustainability practices, some areas could be improved"
+}

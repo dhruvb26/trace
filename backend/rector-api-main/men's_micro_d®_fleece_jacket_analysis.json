@@ -1,0 +1,24 @@
+{
+  "product_name": "Men's Micro D\u00ae Fleece Jacket",
+  "company": "Patagonia",
+  "sustainability_score": 72,
+  "scraped_data": {
+    "Product Name": "Men's Micro D\u00ae Fleece Jacket",
+    "Material Info": "Made of 100% recycled polyester microfleece that feels soft and light, provides steadfast warmth and dries quickly",
+    "Made In Info": "Made in a Fair Trade Certified\u2122 factory",
+    "Sustainability Features": [
+      "Made of 100% recycled polyester microfleece that feels soft and light, provides steadfast warmth and dries quickly",
+      "Made in a Fair Trade Certified\u2122 factory, which means the people who made this product earned a premium for their labor",
+      "4.7-oz 100% recycled polyester microdenier fleece with a double-sided, anti-pilling finish (BLK, FEA: solution-dyed yarns)",
+      "3-oz 100% recycled polyester brushed tricot mesh",
+      "Made in a Fair Trade Certified\u2122 factory"
+    ],
+    "Certifications": [],
+    "Product URL": "https://www.patagonia.com/product/mens-micro-d-fleece-jacket/26171.html?dwvar_26171_color=NENA"
+  },
+  "supply_chain_data": {
+    "ai_response": "```json\n{\n  \"materials_source\": {\n    \"recycled_polyester\": \"Primarily from recycled plastic bottles; specific sourcing locations not publicly disclosed by Patagonia, but likely global.\",\n    \"elastane\": \"Source not publicly disclosed by Patagonia.\"\n  },\n  \"manufacturing_locations\": {\n    \"primary\": \"Not publicly disclosed by Patagonia, but likely in Asia.\"\n  },\n  \"transportation\": {\n    \"methods\": \"Not specified by Patagonia, but likely a combination of sea freight (for bulk transport) and trucking/air freight (for final delivery).\",\n    \"details\": \"Patagonia prioritizes reducing transportation impacts where possible but specifics are not readily available.\"\n  },\n  \"sustainability_initiatives\": [\n    \"Use of recycled polyester to reduce reliance on virgin materials and divert plastic waste.\",\n    \"Fair Trade Certified\u2122 sewn, ensuring fair wages and safe working conditions for factory workers.\",\n    \"Commitment to reducing greenhouse gas emissions throughout their supply chain.\",\n    \"Investment in regenerative organic agriculture practices for sourcing some materials (though not specifically for this jacket).\",\n    \"Encouraging repair and reuse of products through their Worn Wear program.\",\n    \"Donation of 1% of sales to environmental nonprofits.\"\n  ],\n  \"certifications\": [\n    \"Fair Trade Certified\u2122 sewn\",\n    \"Bluesign\u00ae approved fabric (indicates responsible chemical management)\" \n  ],\n  \"carbon_footprint_estimate\": {\n    \"value\": \"Not publicly disclosed by Patagonia for this specific product.\",\n    \"comment\": \"Patagonia is working towards greater transparency in its footprint but detailed product-level data is not yet generally available.\"\n  }\n}\n```",
+    "parsing_error": "Could not parse AI response as JSON"
+  },
+  "score_explanation": "Good sustainability practices, some areas could be improved"
+}

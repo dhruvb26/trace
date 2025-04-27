@@ -1,0 +1,23 @@
+[project]
+name = "trace_chat"
+version = "0.1.0"
+description = "trace-chat using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.114.0,<1.0.0"
+]
+
+[project.scripts]
+trace_chat = "trace_chat.main:run"
+run_crew = "trace_chat.main:run"
+train = "trace_chat.main:train"
+replay = "trace_chat.main:replay"
+test = "trace_chat.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
