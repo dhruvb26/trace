@@ -20,26 +20,25 @@ export function ProductInfo() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // const response = await fetch('https://rector-api.vercel.app/analyze', {
-        //   method: 'POST',
-        //   headers: {
-        //     'Content-Type': 'application/json',
-        //   },
-        //   body: JSON.stringify({
-        //     product: "Men's Better Sweater® Fleece Jacket",
-        //   }),
-        // })
+        const response = await fetch('https://rector-api.vercel.app/analyze', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            product: "Men's Better Sweater® Fleece Jacket",
+          }),
+        })
 
-        // if (!response.ok) {
-        //   throw new Error('Failed to fetch data')
-        // }
+        if (!response.ok) {
+          throw new Error('Failed to fetch data')
+        }
 
-        // const jsonData = await response.json()
-        setData(exampleProduct)
+        const jsonData = await response.json()
+        setData(jsonData)
 
         try {
-          const supplyChainStr =
-            exampleProduct.result.supply_chain_data.ai_response
+          const supplyChainStr = jsonData.result.supply_chain_data.ai_response
           const startIndex = supplyChainStr.indexOf('{')
           const endIndex = supplyChainStr.lastIndexOf('}') + 1
           const jsonStr = supplyChainStr.slice(startIndex, endIndex)
