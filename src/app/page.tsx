@@ -1,103 +1,126 @@
-import Image from "next/image";
+'use client'
 
-export default function Home() {
+import { useState } from 'react'
+import { LayoutGroup, motion } from 'framer-motion'
+import { TextRotate } from '@/components/ui/text-rotate'
+import { Textarea } from '@/components/ui/textarea'
+import { Button } from '@/components/ui/button'
+import { KeyReturn } from '@phosphor-icons/react/dist/ssr'
+import Floating, { FloatingElement } from '@/components/ui/parallax-floating'
+import { exampleImages } from '@/utils/image'
+import { useRouter } from 'next/navigation'
+
+function LandingHero() {
+  const [link, setLink] = useState('')
+  const router = useRouter()
+
+  const handleSubmit = () => {
+    router.push(`/flow?url=${link}`)
+  }
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <section className="w-full h-screen overflow-hidden md:overflow-hidden flex flex-col items-center justify-center relative">
+      <Floating sensitivity={-0.5} className="h-full">
+        <FloatingElement
+          depth={4}
+          className="top-[90%] left-[6%] md:top-[80%] md:left-[8%]"
+        >
+          <motion.img
+            src={exampleImages[2].url}
+            alt={exampleImages[2].title}
+            className="w-40 h-40 sm:w-48 sm:h-48 md:w-60 md:h-60 lg:w-64 lg:h-64 object-cover -rotate-[4deg] hover:scale-105 duration-200 cursor-pointer transition-transform shadow-2xl rounded-xl"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.9 }}
+          />
+        </FloatingElement>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+        <FloatingElement
+          depth={1}
+          className="top-[78%] left-[83%] md:top-[68%] md:left-[83%]"
+        >
+          <motion.img
+            src={exampleImages[4].url}
+            alt={exampleImages[4].title}
+            className="w-44 h-44 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 object-cover hover:scale-105 duration-200 cursor-pointer transition-transform shadow-2xl rotate-[19deg] rounded-xl"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.3 }}
+          />
+        </FloatingElement>
+      </Floating>
+
+      <div className="flex flex-col justify-center items-center w-[250px] sm:w-[300px] md:w-[500px] lg:w-[700px] z-50 pointer-events-auto">
+        <motion.h1
+          className="text-6xl text-center w-full justify-center items-center flex-col flex whitespace-pre leading-tight font-calendas tracking-tight space-y-1 md:space-y-2"
+          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          transition={{ duration: 0.2, ease: 'easeOut', delay: 0.3 }}
+        >
+          <span>Fix your </span>
+          <LayoutGroup>
+            <motion.span layout className="flex whitespace-pre">
+              <motion.span
+                layout
+                className="flex whitespace-pre"
+                transition={{ type: 'spring', damping: 30, stiffness: 400 }}
+              >
+                supply chain{' '}
+              </motion.span>
+              <TextRotate
+                texts={[
+                  'instantly',
+                  'efficiently',
+                  'smartly 🧠',
+                  'easily',
+                  '⚡ fast',
+                  '🔄 smoothly',
+                  'securely',
+                  '📈 profitably',
+                  'now 🚀',
+                  'automatically',
+                  'seamlessly ✨',
+                  'reliably 💪',
+                ]}
+                mainClassName="overflow-hidden pr-3 text-lime-700 py-0 pb-2 md:pb-4 rounded-xl"
+                staggerDuration={0.03}
+                staggerFrom="last"
+                rotationInterval={3000}
+                transition={{ type: 'spring', damping: 30, stiffness: 400 }}
+              />
+            </motion.span>
+          </LayoutGroup>
+        </motion.h1>
+        <motion.p
+          className="text-sm sm:text-lg md:text-xl lg:text-2xl text-center font-overusedGrotesk pt-4 sm:pt-8 md:pt-10 lg:pt-12"
+          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          transition={{ duration: 0.2, ease: 'easeOut', delay: 0.5 }}
+        >
+          transform your supply chain operations with our intelligent platform.
+          start optimizing in minutes.
+        </motion.p>
+
+        <div className="flex flex-row justify-center space-x-4 items-center mt-10 sm:mt-16 md:mt-20 lg:mt-20 min-w-full">
+          <Textarea
+            className="w-full p-4 resize-none shadow-xl text-lg"
+            placeholder="Drop in the link and we'll get to work"
+            value={link}
+            onChange={(e) => setLink(e.target.value)}
+          />
+          <Button
+            className="text-lime-700 bg-lime-100 border-lime-300 border shadow-xl cursor-pointer hover:bg-lime-200 hover:border-lime-400 hover:shadow-xl transition-all duration-100"
+            size="lg"
+            onClick={handleSubmit}
+            disabled={link.length === 0}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            Let's go
+            <KeyReturn weight="fill" size={14} />
+          </Button>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+      </div>
+    </section>
+  )
 }
+
+export default LandingHero
