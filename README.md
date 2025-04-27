@@ -1,5 +1,7 @@
 # Trace
 
+![tag:innovationlab](https://img.shields.io/badge/innovationlab-3D8BD3)
+
 Official repository for the source code of **Trace**, built for **LA Hacks '25**.  
 This project focuses on the **Clean Code (Sustainability)** track, aiming to streamline **traceability** and **insight** into supply chains for mid-cap to low-cap companies.
 

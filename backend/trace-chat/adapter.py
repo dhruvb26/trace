@@ -1,5 +1,5 @@
 from uagents_adapter.crewai import CrewAIRegisterTool
-from new_chat_ai.crew import PatagoniaCrew
+from trace_chat.crew import PatagoniaCrew
 import os
 import signal
 import sys
