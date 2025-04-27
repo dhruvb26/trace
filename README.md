@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Trace
 
-## Getting Started
+Official repository for the source code of **Trace**, built for **LA Hacks '25**.  
+This project focuses on the **Clean Code (Sustainability)** track, aiming to streamline **traceability** and **insight** into supply chains for mid-cap to low-cap companies.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Trace.ai** is a platform designed to help companies **track the sustainability** of their supply chains.  
+We use publicly available data to trace how a product was sourced, estimate its **CO₂ emissions**, and ultimately evaluate the company's overall environmental impact.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Through a **seamless dashboard**, companies can:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- View all their factories and suppliers in one place
+- Analyze suppliers and recruiters to determine if they meet the company's sustainability standards
+- Simulate company-supplier communications to assess partnerships
 
-## Learn More
+Our goal is to **empower mid-size and small companies** to independently track and manage their **Environmental, Social, and Governance (ESG)** performance.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technology Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Frontend**: Next.js (React) with TypeScript
+- **UI Components**: Open-source libraries with customizations
+- **Automation & Agents**:
+  - Built with **Crew.ai** and **Fetch.ai**
+  - Custom agents automate processes like:
+    - Web scraping
+    - Communication (e.g., emailing suppliers)
+- **Backend**: FastAPI
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## How It Works
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- We take the url of a product as input
+- Using that, we figure out where the different parts of the product were sourced from.
+- Companies can also change suppliers.
+- This leads to the dashboard where the company gets a detailed view of their metrics.
+- We create **two agents**:
+  - **Company Agent**: Represents the company, outlining its sustainability metrics and expectations.
+  - **Supplier Agent**: Simulates supplier responses based on their sustainability data.
+- The agents interact autonomously, helping the company evaluate potential partnerships based on ESG criteria.
+
+---
+
+## Vision
+
+Trace aims to make **sustainability tracking** more **accessible** and **actionable** for companies without the massive resources of large corporations.  
+By making ESG tracking simple, automated, and insightful, we help businesses move toward a more sustainable future.
